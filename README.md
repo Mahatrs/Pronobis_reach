@@ -24,10 +24,14 @@ cd ~/reach_ws/src
 git clone <this-repo-url>
 git clone https://github.com/Interbotix/reach_ros2.git
 
-2.Setup the Robot:
+```
+
+2. Setup the Robot:
 
 ```bash
 ros2 launch reach_ros setup.launch.py robot_description_file:=/home/maha/reach_ws/src/lbr_description/urdf/iiwa14/iiwa14.xacro
+
+```
 
 3. Start the Reach ROS2 Node:
 
@@ -39,3 +43,4 @@ robot_description_kinematics_file:=/home/maha/reach_ws/src/lbr_description/urdf/
 robot_description_joint_limits_file:=/home/maha/reach_ws/src/lbr_description/urdf/iiwa14/joint_limits.yaml \
 config_file:=/home/maha/reach_ws/src/lbr_description/config/config_file1.yaml \
 config_name:=config_file1
+
